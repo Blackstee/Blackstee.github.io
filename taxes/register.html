@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <script src="https://use.fontawesome.com/06aa9c8068.js"></script>
+  <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multipass</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="css/buttons.css">
+   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+   <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">       
+   <script type="text/javascript" src="js/buttons.js"></script> 
+   <link href="css/animate.css" rel="stylesheet" media="all">  
+   <link href="css/style.css" rel="stylesheet" media="all"> 
+   <link href="css/ex.css" rel="stylesheet" media="all">     
+ </head>
+ <body>
+     <br>
+     <br>
+    <div class="container"> 
+     <div class="row">
+         <div class=" col-md-6">
+         <div class="container"> 
+        <div id="logbox">
+             <div class="col-md-offset-1 col-md-10 col-md-offset-1">
+      <form id="signup" method="post" action="/signup">
+        <h1>Create an account</h1>
+        <input class="input pass" name="user[name]" type="text" placeholder="What's your username?" pattern="^[\w]{3,16}$" autofocus="autofocus" required="required"/>
+        <input class="input pass" name="user[password]" type="password" placeholder="Choose a password" required="required"/>
+        <input class="input pass" name="user[password2]" type="password" placeholder="Confirm password" required="required"/>
+        <input class="input pass" name="user[email]" type="email" placeholder="Email address (optional)"/>
+        <input  class="inputButton" type="submit" value="Sign me up!"/>
+          <a href="authorize.html"><h2>I already have an account. Sign me in</h2></a>
+          <br>
+      </form>
+    </div>
+        </div>
+         </div>
+        </div>
+        </div></div>
+    
+
+     <script type="text/javascript">
+      $(document).ready(function() {
+        $("body").css("display", "none");
+        $("body").fadeIn(800);
+       });
+</script>
+ </body>
+</html>
