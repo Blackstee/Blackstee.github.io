@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Project 1</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+     <link rel='stylesheet prefetch' href='http://cdn.jsdelivr.net/fontawesome/4.1.0/css/font-awesome.css'>
+     <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600'>
+
+      <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/one-page-wonder.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+  
+</head>
+
+<body>
+    
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">DIP - Data In Pocket</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>  
+              <a class="nav-link" data-target="#authorise" data-toggle="modal" class="material-icons button add center-block" href="#">Выйти</a>
+        
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+<nav id="structure" class="left show">
+  <ul>
+    <li><a href="triangle.html" class="active"><i class="fa fa-home"></i> Вернуться к проектам</a></li>
+    <li>
+      <a href="#"><i class="fa fa-table"></i> Спецификации<i class="fa fa-caret-down"></i></a>
+      <ul>
+        <li><a href="#" class="openpreview" onclick="img_size(1)">Спецификация 1</a>
+        <div class="preview" id = "img_1"><img src="images/specifications/1.JPG" width = "145%" height="auto"></div>
+        </li>
+        <li><a href="#" class="openpreview" onclick="img_size(2)">Спецификация 2</a>
+        <div class="preview" id = "img_2"><img src="images/specifications/2.JPG" width = "145%" height="auto"></div>
+        </li>
+        <li><a href="#" class="openpreview" onclick="img_size(3)" >Спецификация 3</a>
+        <div class="preview" id = "img_3"><img src="images/specifications/3.JPG" width = "145%" height="auto"></div>
+        </li>
+        <li><a href="#" class="openpreview" onclick="img_size(4)">Спецификация 4</a>
+        <div class="preview" id = "img_4"><img src="images/specifications/4.JPG" width = "145%" height="auto"></div>
+        </li>
+        <li><a href="#" class="openpreview" onclick="img_size(5)" >Спецификация 5</a>
+        <div class="preview" id = "img_5"><img src="images/specifications/5.JPG" width = "145%" height="auto"></div>
+        </li>  
+      </ul>
+    </li>
+    <li>
+      <a href="#"><i class="fa fa-pencil"></i> Система отопления<i class="fa fa-caret-down"></i></a>
+      <ul>
+        <li><a href="#" class="openpreview"  onclick="img_size(6)">Первый этаж</a>
+        <div class="preview" id = "img_6"><img src="images/sys_otop/5.1.JPG" width = "145%" height="auto"></div>
+        </li>
+        <li><a href="#" class="openpreview" onclick="img_size(7)">Второй этаж</a>
+        <div class="preview" id = "img_7"><img src="images/sys_otop/5.2.JPG" width = "145%" height="auto"></div>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#"><i class="fa fa-dollar"></i> Смета<i class="fa fa-caret-down"></i></a>
+      <ul>
+        <li><a onclick="open_document(1)"> Смета 1</a>
+          <div class="document" id = "doc_1">
+              <h1> DOCUMENT:</h1><br>
+              <h2>Date: </h2>
+              <h2>Author:</h2><br><br>
+              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur venenatis justo ac est tincidunt sagittis. Donec viverra ut elit eget pharetra. Pellentesque dui magna, congue a tellus a, faucibus porta felis. Suspendisse vitae ullamcorper ante, gravida consectetur metus. Nam eu laoreet massa. Donec egestas tellus eu est viverra interdum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse in leo egestas, ullamcorper neque vitae, scelerisque sapien. In at venenatis elit, et venenatis ex. Aenean imperdiet varius nisi, at efficitur nunc finibus sed. Donec libero tortor, viverra ac turpis at, euismod interdum nisi. Quisque facilisis erat laoreet, finibus nisl in, ultricies magna.</h2>
+              
+          </div>
+          </li>
+        <li><a onclick="open_document(2)"> Смета 2</a>
+          </li>
+        <li><a onclick="open_document(3)"> Смета 3</a></li>
+          
+
+      </ul>
+    </li>
+    <li><a href="#" class="active"><i class="fa fa-pencil"></i> Редактировать</a></li>
+    <li><a href="#" class="active"><i class="fa fa-group"></i>  &nbsp; Мессенджер</a></li>  
+    <li><a href="#" class="active"><i class="fa fa-automobile"></i>  &nbsp; Онлайн-закупка</a></li> 
+    <li><a href="#" class="active"><i class="fa fa-chain"></i>  &nbsp; Электронный сметчик</a></li>   
+  </ul>
+  <a href="#" id="showstructure">
+    <i class="fa fa-align-justify"></i>
+  </a>
+</nav>
+    
+    
+ <!-- ПОИСК!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    
+    <form id="contentsearch">
+      <input type="text" name="input" class="input">
+      <button type="reset" class="search"></button>
+    </form>
+    
+
+    
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script  src="js/index.js"></script>
+    
+    <script type="text/javascript">
+        
+        
+ $(document).ready(function() {
+ $("body").css("display", "none");
+ $("body").fadeIn(800);
+ });
+        
+$("#showstructure").click(function(e){
+			$("#structure").toggleClass("show");
+            $(".preview").css ("width",'100%');
+            $(".preview").css ("margin-left",'105%');
+            $(".preview").css ("top",'13%');
+		});
+$("#structure a").click(function(event){
+			if($(this).next('ul').length){
+        event.preventDefault();
+				$(this).next().toggle('fast');
+				$(this).children('i:last-child').toggleClass('fa-caret-down fa-caret-left');
+			}
+		});
+
+
+$("#showmenupro").click(function(e){
+			$("#menupro").toggleClass("show");
+		});
+		$("#menupro a").click(function(event){
+			if($(this).next('ul').length){
+        event.preventDefault();
+				$(this).next().toggle('fast');
+				$(this).children('i:last-child').toggleClass('fa-caret-down fa-caret-left');
+			}
+		});
+
+          
+function expand() {
+  $(".search").toggleClass("close");
+  $(".input").toggleClass("square");
+  if ($('.search').hasClass('close')) {
+    $('input').focus();
+  } else {
+    $('input').blur();
+  }
+}
+$('button').on('click', expand);
+      
+function img_size(num) { 
+var num;
+$(".preview").css ("opacity",'0');    
+document.getElementById('img_'+num).style.width= '115%';
+document.getElementById('img_'+num).style.marginLeft= '140%'; 
+document.getElementById('img_'+num).style.top= '5%'; 
+document.getElementById('img_'+num).style.opacity= '1'; 
+$("#structure").toggleClass("show");    
+}
+        
+        
+function open_document(num) { 
+var num;
+$(".preview").css ("opacity",'0');    
+document.getElementById('doc_'+num).style.opacity= '1'; 
+$("#structure").toggleClass("show");    
+}        
+        
+</script>
+
+
+</body>
+</html>

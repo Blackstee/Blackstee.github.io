@@ -1,0 +1,59 @@
+body{
+    background-image:url(../images/lady.png);
+    background-color: white;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size: 100%;
+    position: fixed;
+    z-index: -10000;
+}
+
+
+.mybg{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.titletext{
+    padding-top: 100%;
+    left: 160%;
+    position:relative;
+}
+
+h1{
+    margin:0px;
+    font-family: "Myfont";
+    font-size: 100px; 
+    text-align: center;
+    color: white;
+}
+
+
+
+
+h2 {
+    margin:0px;
+    font-family: "Myfont";
+    font-size: 30px;  
+     text-align: center;
+     color:white;
+}
+
+
+
+
+
+@font-face {
+font-family: "Myfont";
+src: url("../fonts/Gothic2.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
+
+@font-face {
+font-family: "Beautiful";
+src: url("../fonts/11397.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 

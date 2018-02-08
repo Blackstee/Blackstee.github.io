@@ -1,0 +1,39 @@
+
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+header.masthead {
+  background: url('https://wallpaperscraft.ru/image/ssha_nyu_jork_vid_sverkhu_neboskreby_112139_1920x1080.jpg') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+header.masthead>.overlay {
+  padding: 5rem 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.modal .modal-footer button {
+  float:left;
+}
+
+@media (min-width: 992px) {
+  header.masthead>.overlay {
+    padding: 10rem 0;
+  }
+}
+
+
+
+
+
+

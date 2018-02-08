@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <script src="https://use.fontawesome.com/06aa9c8068.js"></script>
+  <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Top memes</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="css/buttons.css">
+   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+   <script type="text/javascript" src="js/buttons.js"></script> 
+   <link href="css/animate.css" rel="stylesheet" media="all">  
+   <link href="css/style.css" rel="stylesheet" media="all">   
+ </head>
+ <body>
+       
+        <div class="row">
+            <div class="col-md-2">
+        <a  href = "index.html" class="meme button button-block  button-highlight button-giant">MENU</a> 
+            </div>
+            
+            <div class="col-md-8">
+           <a  class=" meme button button-block button-highlight button-giant">Choose!</a>
+            </div>
+            
+            <div class="col-md-2">
+        <a  href = "rating.html" class="meme button button-block  button-highlight button-giant">RATING</a> 
+            </div>
+        </div>
+        <ul class="gallery">
+        <li>
+            <div class = "mybox" >
+            <a href="#"><img src="http://static1.repo.aif.ru/1/d5/54493/3c3a4435f9f0935a4da6618aa8bc754e.jpg"/></a>
+            </div>    
+        </li>
+        <li>
+            <div class = "mybox" >
+            <a href="#"><img src="https://cs7.pikabu.ru/post_img/2018/01/15/10/1516037501185886361.jpg"/></a>
+            </div>
+        </li>
+        </ul> 
+     <div class="memeimages">
+     <div id="memeimage1" style="display:none">
+         <img src="images/meme.png"/>
+     </div>
+     <div id="memeimage6" style="display:none">
+         <img src="images/meme2.png"/>
+     </div>
+     <div id="memeimage3" style="display:none">
+         <img src="images/meme10.png"/>
+     </div> 
+     <div id="memeimage5" style="display:none">
+         <img src="images/meme11.png"/>
+     </div>
+     <div id="memeimage2" style="display:none">
+         <img src="images/meme13.png"/>
+     </div>
+    <div id="memeimage4" style="display:none">
+         <img src="images/meme12.png"/>
+     </div>     
+     </div>     
+     <script type="text/javascript">
+      $(document).ready(function() {
+        $("body").css("display", "none");
+        $("body").fadeIn(800);
+        for (var i = 1; i < 7; i++) {
+            text="showBuyNow("+i+")"
+           setTimeout(text, 1500+200*i); 
+        }     
+       });
+    function showBuyNow(i) { 
+    text="memeimage"+i;    
+    document.getElementById(text).style.display = "inline"; 
+        
+     }
+          
+</script>
+     
+ </body>
+</html>

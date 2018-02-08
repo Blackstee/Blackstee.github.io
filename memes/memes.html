@@ -1,0 +1,86 @@
+!DOCTYPE html>
+<html>
+<head>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet"> 
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">    
+  <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <link href="css/style.css" rel="stylesheet" media="all">      
+</head>
+<body>
+  
+<div id="app">
+<v-app>   
+  <template>
+
+    <v-toolbar color="yellow darken-2" dark fixed app>
+      <v-toolbar-title class="text-xs-center text-md-center" >
+          Memes rate. KIVI team for Int20h 2018</v-toolbar-title>
+    </v-toolbar>
+    <v-content>
+      <v-container fluid fill-height>
+        <v-layout justify-center align-center>
+<template>
+  <v-layout column>
+    <v-flex xs12 md10 offset-xs1>
+      <v-toolbar color="indigo" dark>
+        <v-toolbar-title>Choose top meme!</v-toolbar-title>
+        <v-spacer></v-spacer>
+      </v-toolbar>
+         
+      <v-container fluid grid-list-md >
+        
+        <v-layout row wrap>
+          <v-flex xs12 md6
+            v-for="card in cards"
+            :key="card.title"
+          >
+            <v-card>
+              <v-card-media
+                :src="card.src"
+                height="350px"
+              >
+                <v-container fill-height fluid>
+                  <v-layout fill-height>
+                    <v-flex xs12 md6 lg4>
+                      <span class="headline white--text" v-text="card.title"></span>
+                    </v-flex>
+                  </v-layout>
+                </v-container>
+              </v-card-media>
+            </v-card>
+          </v-flex>
+        </v-layout>    
+      </v-container>
+    </v-flex>
+  </v-layout>
+</template>
+        </v-layout>
+      </v-container>
+    </v-content>
+    <v-footer color="yellow darken-2" app>
+      <v-spacer></v-spacer>
+      <span class="white--text">KIVI team for Int20h 2018</span>
+    </v-footer>
+</template> 
+    </v-app>
+    </div>
+ 
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
+    
+  <script>
+   
+    new Vue({ 
+        el: '#app',
+        data: {
+        cards: [
+        { src: 'https://s00.yaplakal.com/pics/pics_original/0/3/5/9875530.jpg' },
+        { src: 'http://funium.ru/wp-content/uploads/2017/04/%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BC%D0%B5%D0%BC%D1%8B-10.jpg' }  
+            ]}
+    })
+    
+    
+  </script>
+</body>
+</html>
